@@ -79,4 +79,5 @@ export interface ShowAlertOptions {
   variant?: string;
 }
 
+
 export type Transitions = 'fade' | 'slideDown' | 'slideLeft' | 'slideRight' | 'slideUp';

@@ -35,10 +35,16 @@ export interface UserState {
   status: ValueOf<Status>;
 }
 
+export interface UsersListGitHub {
+  topics: Record<string, Topic>;
+  query: string;
+}
+
 export interface StoreState {
   app: AppState;
   github: GitHubState;
   user: UserState;
+  github_user: UsersListGitHub;
 }
 
 export interface WithDispatch {

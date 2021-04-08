@@ -5,6 +5,7 @@ import { Box, Container, Heading, Link, Paragraph, Text } from 'styled-minimal';
 import { spacer } from 'modules/theme';
 
 import Github from 'containers/GitHub';
+import UserSearch from 'containers/UserSearch';
 
 const Header = styled.div`
   margin-bottom: ${spacer(3)};
@@ -27,6 +28,9 @@ function Private() {
             </Link>
           </Paragraph>
         </Header>
+        <Box textAlign="left" mb={4}>
+          <UserSearch />
+        </Box>
         <Box textAlign="center" mb={4}>
           <Heading as="h5">Here's some GitHub data</Heading>
           <Text fontSize={1}>
